@@ -13,9 +13,12 @@ function main(){
     askFive();
 }
 function askFive(){
-    askQuestion(1);
-    let score = 0
-    for ()
+    let score = 0;
+    for (let question = 1; question<6; question++){
+        askQuestion(arguments.question);
+        score+=askQuestion();
+    }
+    return score
 }
 function askQuestion(){
     let a = Math.floor(Math.random()*6)+3;
