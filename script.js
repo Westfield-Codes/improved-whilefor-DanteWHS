@@ -17,7 +17,6 @@ function askFive(){
     for (let question = 1; question<6; question++){
         askQuestion(arguments.question); score+=(0, 1);
     }
-    alert(score);
     return score
 }
 function askQuestion(){
