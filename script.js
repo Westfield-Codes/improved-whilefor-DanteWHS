@@ -10,12 +10,14 @@
 // Define a function called askFive and call it from inside main().
 // Define a function called askQuestion and call it from inside askFive() as askQuestion(1);
 function main(){
-    askFive();
+    score = askFive();
+    if (score==0) alert("Perfect!");
+    else alert("You got " + score + " out of 5 wrong.");
 }
 function askFive(){
     var score = 0;
     for (let question = 1; question<6; question++){
-        askQuestion(arguments.question); score+=(0, 1);
+        score+=askQuestion(question);
     }
     return score
 }
