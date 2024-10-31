@@ -21,7 +21,7 @@ function askQuestion(question){
         answer = prompt(equation);
         if (answer=="q"){
             alert("Quitter!");
-            wrong = 2;
+            wrong = 1;
         }
         else if (answer==product) alert("Correct!");
         else {
